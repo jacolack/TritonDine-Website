@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Download Triton Dine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Icons -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+<link rel="icon" href="assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="assets/favicons/site.webmanifest">
+<link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="assets/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body onload="myFunction()">
+<script>
+function myFunction() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Windows Phone must come first because its UA also contains "Android"
+
+    if (/android/i.test(userAgent)) {
+               window.location.href = 'https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.jacksheridan.tritondine' 
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+       window.location.href = 'https://itunes.apple.com/us/app/triton-dine/id1437216504?mt=8' 
+    } else
+        {
+           alert("This is not an iOS or Android browser."); 
+        }
+}
+</script>
+<h1>Redirecting to Triton Dine...</h1>
+  <a>Alternatively, open the <a href="https://itunes.apple.com/us/app/triton-dine/id1437216504?mt=8">iOS app</a> 
+    from the Apple app store or the <a href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.jacksheridan.tritondine">Android app</a> 
+    from the Android Play Store.
+</body>
+</html>
